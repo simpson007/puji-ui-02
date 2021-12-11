@@ -1235,6 +1235,11 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.4"
 
+marked@^1.1.1:
+  version "1.2.9"
+  resolved "https://registry.npmmirror.com/marked/download/marked-1.2.9.tgz#53786f8b05d4c01a2a5a76b7d1ec9943d29d72dc"
+  integrity sha1-U3hviwXUwBoqWna30eyZQ9Kdctw=
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -1492,6 +1497,11 @@ postcss@^8.1.10:
     nanoid "^3.1.30"
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
+
+prismjs@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.nlark.com/prismjs/download/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
+  integrity sha1-b4It8b2tllc0sxCzFaIzFc+Zl1Y=
 
 pump@^3.0.0:
   version "3.0.0"
