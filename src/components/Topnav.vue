@@ -1,9 +1,7 @@
 <template>
-  <div class="topnav">
+  <div class="topnav" >
     <router-link to="/" class="logo">
-      <svg class="icon">
-        <use xlink:href="#icon-puji"></use>
-      </svg>
+      <img src="../lib/puji-ui.svg" alt="">
     </router-link>
     <ul class="menu">
       <li>
@@ -39,6 +37,7 @@ export default {
 <style lang="scss" scoped>
 $color: #007974;
 .topnav {
+  background-color: white;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -48,12 +47,13 @@ $color: #007974;
   z-index: 20;
   justify-content: center;
   align-items: center;
+
   > .logo {
     max-width: 6em;
     margin-right: auto;
-    >svg {
-      width: 32px;
-      height: 32px;
+    >img {
+      width: 96px;
+      display :inherit;
     }
   }
   > .menu {
