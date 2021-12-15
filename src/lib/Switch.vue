@@ -18,13 +18,13 @@ export default {
 </script>
 
 <style lang="scss">
-$h: 22px;
+$h: 26px;
 $h2: $h - 4px;
 .puji-switch {
   height: $h;
   width: $h * 2;
   border: none;
-  background: #bfbfbf;
+  background: #dedede;
   border-radius: $h/2;
   position: relative;
 
@@ -40,7 +40,7 @@ $h2: $h - 4px;
   }
 
   &.puji-checked {
-    background: #1296db;
+    background: #ff8257;
 
     > span {
       left: calc(100% - #{$h2} - 2px);

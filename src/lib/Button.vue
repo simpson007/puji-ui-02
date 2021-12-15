@@ -46,7 +46,7 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
+$orange: #ff8257;
 $radius: 4px;
 $red: red;
 $grey: grey;
@@ -70,8 +70,8 @@ $grey: grey;
   }
   &:hover,
   &:focus {
-    color: $blue;
-    border-color: $blue;
+    color: $orange;
+    border-color: $orange;
   }
   &:focus {
     outline: none;
@@ -82,10 +82,10 @@ $grey: grey;
   &.puji-theme-link{
     border-color: transparent;
     box-shadow: none;
-    color: $blue;
+    color: $orange;
     &:hover,
     &:focus{
-      color: lighten($blue, 10%);
+      color: lighten($orange, 10%);
     }
   }
   &.puji-theme-text{
@@ -108,13 +108,13 @@ $grey: grey;
   }
   &.puji-theme-button {
     &.puji-level-main {
-      background: $blue;
+      background: $orange;
       color: white;
-      border-color: $blue;
+      border-color: $orange;
       &:hover,
       &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
+        background: darken($orange, 10%);
+        border-color: darken($orange, 10%);
       }
     }
     &.puji-level-danger {
@@ -139,10 +139,10 @@ $grey: grey;
   }
   &.puji-theme-text {
     &.puji-level-main {
-      color: $blue;
+      color: $orange;
       &:hover,
       &:focus {
-        color: darken($blue, 10%);
+        color: darken($orange, 10%);
       }
     }
     &.puji-level-danger {
@@ -174,7 +174,7 @@ $grey: grey;
     display: inline-block;
     margin-right: 4px;
     border-radius: 8px;
-    border-color: $blue $blue $blue transparent;
+    border-color: $orange $orange $orange transparent;
     border-style: solid;
     border-width: 2px;
     animation: gulu-spin 1s infinite linear;

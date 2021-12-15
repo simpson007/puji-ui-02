@@ -1,5 +1,5 @@
 <demo>
-支持 level
+带颜色倾向的按钮
 </demo>
 <template>
   <div>

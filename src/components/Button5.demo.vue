@@ -1,5 +1,5 @@
 <demo>
-支持显示加载中
+加载中按钮
 </demo>
 <template>
   <div>

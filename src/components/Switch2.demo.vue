@@ -1,5 +1,5 @@
 <demo>
-支持 disabled
+不可用开关
 </demo>
 <template>
   <Switch v-model:value="bool" disabled />

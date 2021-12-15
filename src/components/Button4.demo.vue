@@ -1,5 +1,5 @@
 <demo>
-支持 disabled
+不可用状态按钮
 </demo>
 <template>
   <Button disabled>禁用按钮</Button>
