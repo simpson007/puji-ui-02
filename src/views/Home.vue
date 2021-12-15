@@ -1,66 +1,60 @@
 <template>
-  <div>
-    <div class="topnavAndBanner">
-      <Topnav/>
-      <div class="banner">
-        <div class="banner-left">
-          <h1>Puji-UI</h1>
-          <h2>高效、精致、易用的 UI 组件库</h2>
-          <div class="actions">
-            <ul class="btn">
-              <li class="start">
-                <router-link to="/doc">开始使用</router-link>
-              </li>
-              <li class="github">
-                <a href="https://github.com">
-                  <svg>
-                    <use xlink:href="#icon-github"></use>
-                  </svg>
-                  GitHub
-                </a>
-              </li>
-              <li class="gitee">
-                <a href="https://gitee.com">
-                  <svg>
-                    <use xlink:href="#icon-gitee"></use>
-                  </svg >
-                  Gitee
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="banner-right">
-          <img src="../lib/programming.svg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="line"></div>
-    <div class="features">
-      <ul>
-        <li>
-          <svg>
-            <use xlink:href="#icon-vue"></use>
-          </svg>
-          <h3>基于 Vue 3</h3>
-          <p>骄傲地使用了 Vue 3 API</p>
+  <Topnav/>
+  <div class="banner">
+    <div class="banner-left">
+      <h1>Puji-UI</h1>
+      <h2>高效、精致、易用的 UI 组件库</h2>
+      <ul class="btn">
+        <li class="start">
+          <router-link to="/doc">开始使用</router-link>
         </li>
-        <li>
-          <svg>
-            <use xlink:href="#icon-ts"></use>
-          </svg>
-          <h3>基于 TypeScript </h3>
-          <p>源代码采用 TypeScript 书写</p>
+        <li class="github">
+          <a href="https://github.com">
+            <svg>
+              <use xlink:href="#icon-github"></use>
+            </svg>
+            GitHub
+          </a>
         </li>
-        <li>
-          <svg>
-            <use xlink:href="#icon-light"></use>
-          </svg>
-          <h3>代码易读</h3>
-          <p>每个组件的源代码都极其简洁</p>
+        <li class="gitee">
+          <a href="https://gitee.com">
+            <svg>
+              <use xlink:href="#icon-gitee"></use>
+            </svg>
+            Gitee
+          </a>
         </li>
       </ul>
     </div>
+    <div class="banner-right">
+      <img src="../lib/programming.svg" alt="">
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="features">
+    <ul>
+      <li>
+        <svg>
+          <use xlink:href="#icon-vue"></use>
+        </svg>
+        <h3>基于 Vue 3</h3>
+        <p>骄傲地使用了 Vue 3 API</p>
+      </li>
+      <li>
+        <svg>
+          <use xlink:href="#icon-ts"></use>
+        </svg>
+        <h3>基于 TypeScript </h3>
+        <p>源代码采用 TypeScript 书写</p>
+      </li>
+      <li>
+        <svg>
+          <use xlink:href="#icon-light"></use>
+        </svg>
+        <h3>代码易读</h3>
+        <p>每个组件的源代码都极其简洁</p>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -79,16 +73,23 @@ $color: #007974;
 .topnavAndBanner {
 
 }
+
 .line {
-  border-top: 1px solid #aeaeae;
+  @media (min-width: 320px) {
+    border: none;
+  }
+  @media (min-width: 800px) {
+    border-top: 1px solid #aeaeae;
+  }
 }
+
 .features {
   margin: 16px auto;
   padding-top: 20px;
-  @media (min-width: 375px) {
-    width: 375px;
+  @media (min-width: 320px) {
+    width: 300px;
     > ul {
-      > li{
+      > li {
         width: 100%;
       }
     }
@@ -96,7 +97,7 @@ $color: #007974;
   @media (min-width: 800px) {
     width: 600px;
     > ul {
-      > li{
+      > li {
         width: 50%;
       }
     }
@@ -149,74 +150,71 @@ $color: #007974;
   display: flex;
   flex-wrap: wrap;
 
-
   > .banner-left {
     > h1 {
+      font-family: "PingFang SC",serif;
       font-size: 80px;
     }
 
     > h2 {
       font-size: 26px;
     }
-    > .actions {
-      padding: 8px 0;
 
-      > .btn {
+    > .btn {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 20px;
+
+      > li {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.4;
+
         display: flex;
-        flex-wrap: wrap;
-        padding-top: 20px;
-        > li {
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 1.4;
+        flex-wrap: nowrap;
+        align-items: center;
 
-          display: flex;
-          flex-wrap: nowrap;
-          align-items: center;
-          > a {
-            padding: 6px 24px;
-          }
+        > a {
+          padding: 6px 24px;
         }
-        > li:not(:last-child) {
-          margin-right: 30px;
-        }
-        > .start{
-          color: #fff;
-          background-color: #1baaa0;
-          box-shadow: none;
-          border: none;
-        }
-        > .start:hover {
+      }
+
+      > li:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      > .start {
+        color: #fff;
+        background-color: #1baaa0;
+
+        &:hover{
           background-color: #00948a;
+
           a {
             text-decoration: none;
           }
         }
-        > .github,.gitee{
-          background-color: white;
-          box-shadow: 0 16px 32px 0 rgb(0 0 0 / 6%);
-          > a{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            > svg{
-              width: 24px;
-              height: 24px;
-              margin-right: 10px;
-            }
-          }
-        }
+      }
 
-        > .github:hover{
-          background-color: #f5f5f5;
-          > a {
+      > .github, .gitee {
+        background-color: white;
+        box-shadow: 0 16px 32px 0 rgb(0 0 0 / 6%);
+
+        &:hover{ background-color: #f5f5f5;}
+
+        > a {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          &:hover{
             text-decoration: none;
           }
-        }
-        > .gitee:hover{
-          background-color: #f5f5f5;
-          > a {
-            text-decoration: none;
+
+          > svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
           }
         }
       }
@@ -226,30 +224,33 @@ $color: #007974;
   @media (min-width: 320px) {
     width: 320px;
     margin: 24px auto;
-    padding: 20px 16px;
+    padding: 0 16px;
     > .banner-left {
       text-align: center;
       margin: 16px auto;
+
       > h2 {
-        font-size: 24px;
+        font-size: 20px;
       }
-      > .actions {
-        >.btn {
-          > li {
-            > a {
-              padding: 6px 10px;
-              > svg{
-                display: none;
-              }
+
+      > .btn {
+        > li {
+          > a {
+            padding: 6px 10px;
+
+            > svg {
+              display: none;
             }
           }
-      }
+        }
       }
     }
     > .banner-right {
-      width: 80%;
+      width: 100%;
       align-items: center;
-      margin: 32px auto;
+      margin-top: 32px;
+      margin-left: auto;
+      margin-right: auto;
       padding: 0 16px;
     }
   }
@@ -260,13 +261,12 @@ $color: #007974;
     > .banner-left {
       text-align: center;
       margin: 16px auto;
-      > .actions {
-        >.btn {
-          > li {
-            > a {
-              > svg{
-                display: block;
-              }
+
+      > .btn {
+        > li {
+          > a {
+            > svg {
+              display: block;
             }
           }
         }
@@ -288,10 +288,11 @@ $color: #007974;
     }
     > .banner-right {
       width: 32%;
-        align-items: center;
-        margin: 16px auto;
-        padding: 0 16px;
+      align-items: center;
+      margin: 16px auto;
+      padding: 0 16px;
     }
   }
 }
+
 </style>
