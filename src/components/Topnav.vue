@@ -47,6 +47,7 @@ $color: #007974;
   z-index: 20;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 8%);
 
   > .logo {
     max-width: 6em;
