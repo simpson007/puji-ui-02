@@ -63,6 +63,10 @@ $color: #007974;
     flex-wrap: nowrap;
     > li {
       margin: 0 1em;
+      > a:hover{
+        color: #ff8257;
+        text-decoration: none;
+      }
     }
   }
   > .toggleAside {

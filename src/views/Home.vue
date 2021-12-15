@@ -67,12 +67,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$green: #02bcb0;
-$border-radius: 28px;
-$color: #007974;
-.topnavAndBanner {
+$orange: #ff8257;
 
-}
+$color: #3f3d56;
 
 .line {
   @media (min-width: 320px) {
@@ -185,10 +182,10 @@ $color: #007974;
 
       > .start {
         color: #fff;
-        background-color: #1baaa0;
+        background-color: $orange;
 
         &:hover{
-          background-color: #00948a;
+          background-color: darken($orange,10%) ;
 
           a {
             text-decoration: none;
