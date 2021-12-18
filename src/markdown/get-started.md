@@ -20,7 +20,7 @@ import {Button, Tabs, Switch, Dialog} from "Puji-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "Pujji-ui"
+import {Button, Tabs, Switch, Dialog} from "Puji-ui"
 export default {
   components: {Button}
 }

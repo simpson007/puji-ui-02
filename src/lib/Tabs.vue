@@ -3,7 +3,8 @@
     <div class="puji-tabs-nav" ref="container">
       <div class="puji-tabs-nav-item" v-for="(t,index) in titles"
            :ref="el => { if (t===selected) selectedItem = el }" @click="select(t)"
-           :class="{selected: t=== selected}" :key="index">{{t}}</div>
+           :class="{selected: t=== selected}" :key="index">{{t}}
+      </div>
       <div class="puji-tabs-nav-indicator" ref="indicator"></div>
     </div>
     <div class="puji-tabs-content">
@@ -62,6 +63,7 @@ export default {
     const select = (title: string) => {
       context.emit('update:selected', title)
     }
+
     return {
       current,
       defaults,
@@ -108,6 +110,7 @@ $border-color: #d9d9d9;
   }
   &-content {
     padding: 8px 0;
+
   }
 }
 </style>

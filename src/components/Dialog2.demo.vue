@@ -1,5 +1,5 @@
 <demo>
-更简单的使用
+函数式调用打开对话框
 </demo>
 <template>
   <div>

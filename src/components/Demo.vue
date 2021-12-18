@@ -4,8 +4,8 @@
     <div class="demo-component">
       <component :is="component" />
     </div>
-    <div class="demo-actions">
-      <Button @click="toggleCode">查看代码</Button>
+    <div class="demo-actions" @click="toggleCode">
+      {{ codeVisible === true ? '隐藏代码' : '显示代码' }}
     </div>
     <div class="demo-code" v-if="codeVisible">
       <pre class="language-html" v-html="html" />
@@ -60,8 +60,15 @@ $border-color: #e9e9e9;
     padding: 16px;
   }
   &-actions {
+    cursor: pointer;
+    text-align: center;
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
+    color: #ccc;
+    &:hover {
+      color: #ff8257;
+      background-color: #f9fafc;
+    }
   }
   &-code {
     padding: 8px 16px;

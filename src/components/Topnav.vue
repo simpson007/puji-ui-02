@@ -9,7 +9,7 @@
       </li>
     </ul>
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
-      <use xlink:href="#icon-menu"></use>
+      <use xlink:href="#icon-zhankai"></use>
     </svg>
   </div>
 </template>
@@ -72,13 +72,12 @@ $color: #007974;
   > .toggleAside {
     width: 32px;
     height: 32px;
-    background: red;
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     display: none;
-    background: fade-out(black, 0.9);
+
   }
   @media (max-width: 500px) {
     > .menu {

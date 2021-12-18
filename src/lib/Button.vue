@@ -79,6 +79,14 @@ $grey: grey;
   &::-moz-focus-inner {
     border: 0;
   }
+  &.puji-theme-primary{
+    border-color: $border-color;
+    color: $color;
+    &:hover,
+    &:focus{
+      color: $orange;
+    }
+  }
   &.puji-theme-link{
     border-color: transparent;
     box-shadow: none;
@@ -96,10 +104,15 @@ $grey: grey;
       background: darken(white, 5%);;
     }
   }
-  &.puji-size-big {
+  &.puji-size-large {
     font-size: 24px;
     height: 48px;
     padding: 0 16px;
+  }
+  &.puji-size-normal {
+    font-size: 16px;
+    height: 32px;
+    padding: 0 12px;
   }
   &.puji-size-small {
     font-size: 12px;
@@ -107,6 +120,16 @@ $grey: grey;
     padding: 0 4px;
   }
   &.puji-theme-button {
+    &.puji-level-normal {
+      background: white;
+      color:$color;
+      border-color: $border-color;
+      &:hover,
+      &:focus {
+        color:$orange;
+        border-color: $orange;
+      }
+    }
     &.puji-level-main {
       background: $orange;
       color: white;
@@ -155,10 +178,10 @@ $grey: grey;
   }
   &.puji-theme-button {
     &[disabled] {
-      cursor: not-allowed;
-      color: $grey;
-      &:hover {
-        border-color: $grey;
+        cursor: not-allowed;
+        color: $grey;
+        &:hover {
+          border-color: $grey;
       }
     }
   }
@@ -177,7 +200,7 @@ $grey: grey;
     border-color: $orange $orange $orange transparent;
     border-style: solid;
     border-width: 2px;
-    animation: gulu-spin 1s infinite linear;
+    animation: puji-spin 1s infinite linear;
   }
 }
 @keyframes puji-spin {

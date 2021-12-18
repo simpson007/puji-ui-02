@@ -3,7 +3,7 @@
 </demo>
 <template>
   <div>
-    <Button>主要按钮</Button>
+    <Button theme="primary">主要按钮</Button>
     <Button theme="link">链接按钮</Button>
     <Button theme="text">文字按钮</Button>
   </div>

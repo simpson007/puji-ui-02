@@ -3,6 +3,7 @@
     <h1>Switch 开关 </h1>
     <Demo :component="Switch1Demo" />
     <Demo :component="Switch2Demo" />
+    <Attr :columns="columns" :data="data"/>
   </div>
 </template>
 
@@ -13,15 +14,34 @@ import Demo from './Demo.vue'
 import {
   ref
 } from 'vue'
+import Attr from './Attr.vue'
+import {columns} from '../lib/data';
 export default {
   components: {
-    Demo
+    Demo,Attr
   },
   setup() {
-    const bool = ref(false)
+    const data = ref([
+      {
+        params: 'value',
+        desc: '开关状态',
+        type: 'Boolean',
+        select: '-',
+        default: '-',
+      },
+      {
+        params: 'width',
+        desc: '是否禁用',
+        type: 'Boolean',
+        select: '-',
+        default: 'false',
+      },
+    ]);
     return {
       Switch1Demo,
       Switch2Demo,
+      columns,
+      data
     }
   }
 }
