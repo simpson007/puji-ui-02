@@ -71,7 +71,7 @@ export default {
       select,
       selectedItem,
       indicator,
-      container
+      container,
     }
   }
 }
