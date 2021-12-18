@@ -18,13 +18,13 @@
         <h2>组件列表</h2>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch <span>开关</span></router-link>
-          </li>
-          <li>
             <router-link to="/doc/button">Button <span>按钮</span></router-link>
           </li>
           <li>
             <router-link to="/doc/dialog">Dialog <span>对话框</span></router-link>
+          </li>
+          <li>
+            <router-link to="/doc/switch">Switch <span>开关</span></router-link>
           </li>
           <li>
             <router-link to="/doc/tabs">Tabs <span>标签页</span></router-link>
