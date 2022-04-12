@@ -9,7 +9,7 @@
           <router-link to="/doc">开始使用</router-link>
         </li>
         <li class="github">
-          <a href="https://github.com">
+          <a href="https://github.com/simpson007/puji-ui-02">
             <svg>
               <use xlink:href="#icon-github"></use>
             </svg>
@@ -17,7 +17,7 @@
           </a>
         </li>
         <li class="gitee">
-          <a href="https://gitee.com">
+          <a href="https://gitee.com/ming-lei-yu/puji-ui-02">
             <svg>
               <use xlink:href="#icon-gitee"></use>
             </svg>
