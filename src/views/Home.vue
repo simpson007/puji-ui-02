@@ -27,7 +27,7 @@
       </ul>
     </div>
     <div class="banner-right">
-      <img src="../lib/programming.svg" alt="">
+      <img src="../assets/programming.svg" alt="">
     </div>
   </div>
   <div class="line"></div>
@@ -38,7 +38,7 @@
           <use xlink:href="#icon-vue"></use>
         </svg>
         <h3>基于 Vue 3</h3>
-        <p>骄傲地使用了 Vue 3 API</p>
+        <p>使用了 Vue 3 API</p>
       </li>
       <li>
         <svg>

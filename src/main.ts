@@ -5,7 +5,7 @@ import App from "./App.vue";
 import { router } from "./router";
 import 'github-markdown-css'
 import Markdown from './components/Markdown.vue';
-import './lib/programming.svg'
+import './assets/programming.svg'
 
 const app = createApp(App);
 app.use(router);

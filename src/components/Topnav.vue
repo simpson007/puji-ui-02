@@ -1,7 +1,7 @@
 <template>
   <div class="topnav" >
     <router-link to="/" class="logo">
-      <img src="../lib/puji-ui.svg" alt="">
+      <img src="../assets/puji-ui.svg" alt="">
     </router-link>
     <ul class="menu">
       <li>
